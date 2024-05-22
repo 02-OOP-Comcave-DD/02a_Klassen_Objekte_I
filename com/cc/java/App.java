@@ -24,15 +24,24 @@ public class App {
         // Cat --> Refenrenztyp (Klasse aus dem das Objekt entsteht)
         // cat1 --> Referenzvariable (Adresse des Objekts im RAM)
         Cat cat1 = new Cat();       // Instanziierung >> Objekt
-        System.out.println("Blick von aussen: " + cat1);   // Text + Adresse des Objekts
+        output("Blick von aussen: " + cat1);   // Text + Adresse des Objekts
         cat1.sayHi();
 
-System.out.println("-----------------------");
+output("-----------------------");
 
         Cat cat2 = new Cat();       // Instanziierung >> Objekt
-        System.out.println("Blick von aussen: " + cat2);   // Tect + Adresse des Objekts
+        output("Blick von aussen: " + cat2);   // Text + Adresse des Objekts
         cat2.sayHi();
+
+        output("hi");
     }
+    // Statische Methode, die in der Klasse ausgeführt wird...
+    public static void output(String outputStr){
+        System.out.println(outputStr);
+
+    }
+
+
 }
 
  
