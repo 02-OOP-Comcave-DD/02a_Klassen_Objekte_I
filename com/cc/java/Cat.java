@@ -10,8 +10,13 @@ public class Cat {
 
     // }
 
-    public void sayHi(){
-        App.output("Blick von innen " + this);
+    // public void sayHi(){
+    //     App.output("Blick von innen " + this);
+
+    // }
+
+    Cat getInstanceVar(){     // Objektinstanz vom Typ Cat
+        return this;
 
     }
 }

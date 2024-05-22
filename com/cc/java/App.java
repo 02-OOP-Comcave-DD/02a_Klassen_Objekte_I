@@ -25,14 +25,16 @@ public class App {
         // cat1 --> Referenzvariable (Adresse des Objekts im RAM)
         Cat cat1 = new Cat();       // Instanziierung >> Objekt
         output("Blick von aussen: " + cat1);   // Text + Adresse des Objekts
-        cat1.sayHi();
+        output("Blick von innen: " + cat1.getInstanceVar());   // Text + Adresse des Objekts
+
 
 output("-----------------------");
 
         Cat cat2 = new Cat();       // Instanziierung >> Objekt
         output("Blick von aussen: " + cat2);   // Text + Adresse des Objekts
-        cat2.sayHi();
-        
+        output("Blick von innen: " + cat2.getInstanceVar());   // Text + Adresse des Objekts
+
+
     }
     // Statische Methode, die in der Klasse ausgeführt wird...
     public static void output(String outputStr){
