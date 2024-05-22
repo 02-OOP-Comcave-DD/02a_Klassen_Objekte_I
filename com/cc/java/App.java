@@ -32,8 +32,7 @@ output("-----------------------");
         Cat cat2 = new Cat();       // Instanziierung >> Objekt
         output("Blick von aussen: " + cat2);   // Text + Adresse des Objekts
         cat2.sayHi();
-
-        output("hi");
+        
     }
     // Statische Methode, die in der Klasse ausgeführt wird...
     public static void output(String outputStr){
