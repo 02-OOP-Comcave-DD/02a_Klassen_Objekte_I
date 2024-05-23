@@ -27,6 +27,15 @@ public class App {
         output("Blick von aussen: " + cat1);   // Text + Adresse des Objekts
         output("Blick von innen: " + cat1.getInstanceVar());   // Text + Adresse des Objekts
 
+        // Werte zuweisen
+        cat1.name = "Trollo";
+        cat1.furColor = "orange";
+        cat1.age = 38;
+
+        // Werte ausgeben
+        output(cat1.name);
+        output(cat1.furColor);
+        output(Integer.toString(cat1.age));  // "Integer" Typconvertierung
 
 output("-----------------------");
 
@@ -34,14 +43,21 @@ output("-----------------------");
         output("Blick von aussen: " + cat2);   // Text + Adresse des Objekts
         output("Blick von innen: " + cat2.getInstanceVar());   // Text + Adresse des Objekts
 
+        // Werte zuweisen
+        cat2.name = "Hugo";
+        cat2.furColor = "Lila";
+        cat2.age = 42;
 
+        // Werte ausgeben
+        output(cat2.name);
+        output(cat2.furColor);
+        output(Integer.toString(cat2.age));  // "Integer" Typconvertierung
     }
     // Statische Methode, die in der Klasse ausgeführt wird...
     public static void output(String outputStr){
         System.out.println(outputStr);
 
     }
-
 
 }
 

@@ -15,7 +15,16 @@ public class Cat {
 
     // }
 
-    Cat getInstanceVar(){     // Objektinstanz vom Typ Cat
+//**************------------------------------*****************/
+
+        public String name;
+        public String furColor;
+        public int age;               // int steht für ganze Zahlen | flow steht für Nachkommazahlen
+
+    
+
+
+        public Cat getInstanceVar(){ // Objektinstanz vom Typ Cat
         return this;
 
     }
