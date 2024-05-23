@@ -16,10 +16,10 @@ public class Cat {
     // }
 
 //**************------------------------------*****************/
-
-        public String name;
-        public String furColor;
-        public int age;               // int steht für ganze Zahlen | flow steht für Nachkommazahlen
+        // Werte eingegeben
+        private String name;
+        private String furColor;
+        private int age;               // int steht für ganze Zahlen | flow steht für Nachkommazahlen
         
         // rechtsklick in dieses Fenster, dann auf "Source Action", oben alles markieren und OK
         public Cat(String name, String furColor, int age) {
@@ -27,10 +27,39 @@ public class Cat {
             this.furColor = furColor;
             this.age = age;
         }
+        
 
-        public Cat getInstanceVar(){ // Objektinstanz vom Typ Cat
+        // Getter
+        public String getName() {
+            if (checkPermission()) {
+                return name;
+            } else {
+                return "Sorry, du kommst hier nüsch rein";
+            } 
+        }
+
+        public String getFurColor() {
+            return furColor;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        //Setter
+        public void setFurColor(String furColor) {
+            this.furColor = furColor;
+        }
+
+
+        // Adresse der Objektinstanz vom Typ Cat
+        public Cat getInstanceVar(){ 
         return this;
+    }
 
+
+        private boolean checkPermission(){
+            return false;
     }
 
 }

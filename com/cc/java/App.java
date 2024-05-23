@@ -29,9 +29,12 @@ public class App {
 
 
         // Werte ausgeben
-        output(cat1.name);
-        output(cat1.furColor);
-        output(Integer.toString(cat1.age));  // "Integer" Typconvertierung
+        output(cat1.getName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge()));  // "Integer" Typconvertierung
+
+        cat1.setFurColor("Pink");
+        output(cat1.getFurColor());
 
 output("-----------------------");
 
@@ -41,9 +44,9 @@ output("-----------------------");
 
 
         // Werte ausgeben
-        output(cat2.name);
-        output(cat2.furColor);
-        output(Integer.toString(cat2.age));  // "Integer" Typconvertierung
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));  // "Integer" Typconvertierung
     }
     // Statische Methode, die in der Klasse ausgeführt wird...
     public static void output(String outputStr){
