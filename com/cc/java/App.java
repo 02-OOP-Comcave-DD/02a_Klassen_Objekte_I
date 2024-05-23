@@ -23,14 +23,10 @@ public class App {
    
         // Cat --> Refenrenztyp (Klasse aus dem das Objekt entsteht)
         // cat1 --> Referenzvariable (Adresse des Objekts im RAM)
-        Cat cat1 = new Cat();       // Instanziierung >> Objekt
+        Cat cat1 = new Cat("Troll", "orange", 38);       // Instanziierung >> Objekt
         output("Blick von aussen: " + cat1);   // Text + Adresse des Objekts
         output("Blick von innen: " + cat1.getInstanceVar());   // Text + Adresse des Objekts
 
-        // Werte zuweisen
-        cat1.name = "Trollo";
-        cat1.furColor = "orange";
-        cat1.age = 38;
 
         // Werte ausgeben
         output(cat1.name);
@@ -39,14 +35,10 @@ public class App {
 
 output("-----------------------");
 
-        Cat cat2 = new Cat();       // Instanziierung >> Objekt
+        Cat cat2 = new Cat("Hugo", "Lila", 42);       // Instanziierung >> Objekt
         output("Blick von aussen: " + cat2);   // Text + Adresse des Objekts
         output("Blick von innen: " + cat2.getInstanceVar());   // Text + Adresse des Objekts
 
-        // Werte zuweisen
-        cat2.name = "Hugo";
-        cat2.furColor = "Lila";
-        cat2.age = 42;
 
         // Werte ausgeben
         output(cat2.name);
